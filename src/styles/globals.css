@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+    .tv {
+        @apply h-screen relative bg-[#031e11];
+    }
+
+    .collapse{
+        @apply animate-collapse animation-fill-forwards
+        before:content-[''] before:block before:h-full before:absolute
+        before:inset-0 before:bg-white before:z-[1] before:opacity-0
+        before:animate-opacity before:animation-fill-forwards;
+    }
+
+    .terminal {
+        --background: #031e11;
+        @apply  bg-[#031e11] h-full !important;
+    }
+
+    .flicker {
+        @apply fixed inset-0 bg-[#121010]/[0.2] opacity-0 z-50 animate-flickering pointer-events-none;
+    }
+
+    .scanlines {
+        @apply top-0 left-0 h-full w-full bg-gradient-to-b from-white to-gray-500 bg-scan fixed
+        pointer-events-none z-10 opacity-[.06];
+    }
+
+    .before-scanlines {
+        @apply absolute top-0 h-[5px] bg-white
+        from-black via-white to-black
+        opacity-0;
+    }
+
+    .after-scanlines {
+        @apply shadow-cursor;
+    }
+
+    .collection {
+        @apply absolute bottom-0 left-0 p-3;
+    }
+}
