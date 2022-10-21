@@ -4,42 +4,102 @@
 
 @layer components{
 
-    .tv {
-        @apply h-screen relative bg-[#031e11];
+    @import 'https://fonts.googleapis.com/css?family=Inconsolata';
+
+    html {
+      min-height: 100%;
     }
 
-    .collapse{
-        @apply animate-collapse animation-fill-forwards
-        before:content-[''] before:block before:h-full before:absolute
-        before:inset-0 before:bg-white before:z-[1] before:opacity-0
-        before:animate-opacity before:animation-fill-forwards;
+    body {
+      box-sizing: border-box;
+      height: 100%;
+      background-color: #000000;
+      background-image: radial-gradient(#11581E, #041607), url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Inconsolata', Helvetica, sans-serif;
+      font-size: 1.2rem;
+      color: rgba(128, 255, 128, 0.8);
+      text-shadow:
+          0 0 1ex rgba(51, 255, 51, 1),
+          0 0 2px rgba(255, 255, 255, 0.8);
     }
 
-    .terminal {
-        --background: #031e11;
-        @apply  bg-[#031e11] h-full !important;
+    html,body{
+        margin:0;
     }
 
-    .flicker {
-        @apply fixed inset-0 bg-[#121010]/[0.2] opacity-0 z-50 animate-flickering pointer-events-none;
+    .noise {
+      pointer-events: none;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-image: url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+      opacity: .02;
     }
 
-    .scanlines {
-        @apply top-0 left-0 h-full w-full bg-gradient-to-b from-white to-gray-500 bg-scan fixed
-        pointer-events-none z-10 opacity-[.06];
+    .overlay {
+      pointer-events: none;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background:
+          repeating-linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0,
+          rgba(0, 0, 0, 0.3) 50%,
+          rgba(0, 0, 0, 0) 100%);
+      background-size: auto 4px;
+      z-index: 1;
     }
 
-    .before-scanlines {
-        @apply absolute top-0 h-[5px] bg-white
-        from-black via-white to-black
-        opacity-0;
+    .overlay::before {
+      content: "";
+      pointer-events: none;
+      position: fixed;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+          0deg,
+          transparent 0%,
+          rgba(32, 128, 32, 0.2) 2%,
+          rgba(32, 128, 32, 0.8) 3%,
+          rgba(32, 128, 32, 0.2) 3%,
+          transparent 100%);
+      background-repeat: no-repeat;
+      animation: scan 7.5s linear 0s infinite;
     }
 
-    .after-scanlines {
-        @apply shadow-cursor;
+    @keyframes scan {
+      0%        { background-position: 0 -100vh; }
+      35%, 100% { background-position: 0 100vh; }
     }
 
-    .collection {
-        @apply absolute bottom-0 left-0 p-3;
+    .output {
+      color: rgba(128, 255, 128, 0.8);
+      text-shadow:
+          0 0 1px rgba(51, 255, 51, 0.4),
+          0 0 2px rgba(255, 255, 255, 0.8);
+    }
+
+    .output::before {
+      content: "> ";
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .terminal{
+        background: transparent !important;
     }
 }
