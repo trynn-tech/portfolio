@@ -42,7 +42,7 @@ const Home: NextPage = () => {
             </p>
             <Link href="/resume"><a className="mt-4 indent-2">Resume</a></Link>
             <Link href="/resume"><a className="mt-4 indent-6">Blog</a></Link>
-            <Link href="/resume"><a className="mt-4 indent-10">Projects</a></Link>
+            <Link href="https://worlddomination.ca/"><a className="mt-4 indent-10">Projects</a></Link>
           </nav>
           <Terminal
             className="terminal"
