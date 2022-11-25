@@ -21,6 +21,18 @@ const Home: NextPage = () => {
       description: 'Redirects you to my resume page',
       usage: 'resume',
       fn: (...args: string[]) => router.push(`/resume`)
+    },
+    social: {
+      description: 'List relevant professional social media',
+      usage: 'social',
+      fn: (...args: string[]) => {
+        return (
+          <ul>
+            <li><a href="https://www.linkedin.com/in/trynn2501/">https://www.linkedin.com/in/trynn2501/</a></li>
+            <li><a href="https://github.com/Trynn2501" className="whitespace-pre">https://github.com/Trynn2501</a></li>
+          </ul>
+        )
+      } 
     }
   }
 
