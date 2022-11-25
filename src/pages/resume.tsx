@@ -118,7 +118,7 @@ const Resume: NextPage = () => {
                 <div className="my-5">
                   <p><b>Arizona State University</b><br/>
                   <i>Bachelor of Science Software Engineering Degree Major GPA 3.02</i><br/>
-                  <small>September 2017 - May 2022</small>
+                  <small>September 2017 - August 2022</small>
                   </p>
                 </div>
               </div>
