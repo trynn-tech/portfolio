@@ -59,6 +59,7 @@ const Home: NextPage = () => {
           <Terminal
             className="terminal"
             commands={commands}
+            ignoreCommandCase
             welcomeMessage={''}
             promptLabel={'me@React:~$'}
             inputStyle={style}
