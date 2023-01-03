@@ -50,10 +50,11 @@ const Home: NextPage = () => {
           <nav className="menu flex flex-col">
             <p className="mr-[50%] mt-12"> Hello, My name is Trynn Zala your friendly neighborhood console cowboy. My life is a sequence of strange events.
               So I have become a bit of an expert solving such strange events that happen through electricity,
-              language, and society. More intro stuff blah blah blah blah blah blah
+              language, and society. Type &lsquo;help&rsquo; into the prompt below to see a list of currently
+              available functions of this website
             </p>
             <Link href="/resume"><a className="mt-4 indent-2">Resume</a></Link>
-            <Link href="/resume"><a className="mt-4 indent-6">Blog</a></Link>
+            <Link href="/resume"><a className="mt-4 indent-6">Blog &#40;Under Construction&#41;</a></Link>
             <Link href="https://worlddomination.ca/"><a className="mt-4 indent-10">Projects</a></Link>
           </nav>
           <Terminal

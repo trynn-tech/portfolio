@@ -34,8 +34,8 @@ const Resume: NextPage = () => {
         <div className="noise"></div>
         <div className="overlay"></div>
         <div className="px-12">
-          <span onClick={() => router.back()} className="absolute top-10 cursor-pointer">
-            <FontAwesomeIcon icon={faChevronLeft} size="2x" className="mr-2 max-h-6 inline"/>Home
+          <span onClick={() => router.back()} className="absolute top-10 cursor-pointer inline-flex">
+            <FontAwesomeIcon icon={faChevronLeft} className="w-10 mt-[2px] max-h-6"/><p>Home</p>
           </span>
           <div className="text-center mb-10">
             <h2 className="text-5xl pt-10"><b>TOP SECRET</b></h2>
