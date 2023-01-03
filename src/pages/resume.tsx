@@ -30,20 +30,20 @@ const Resume: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="tv">
+      <main className="tv caret-transparent overflow-hidden">
         <div className="noise"></div>
         <div className="overlay"></div>
         <div className="px-12">
-          <span onClick={() => router.back()} className="absolute top-10 cursor-pointer inline-flex">
+          <span onClick={() => router.back()} className="absolute top-10 cursor-pointer inline-flex max-[480px]:left-5">
             <FontAwesomeIcon icon={faChevronLeft} className="w-10 mt-[2px] max-h-6"/><p>Home</p>
           </span>
-          <div className="text-center mb-10">
+          <div className="text-center min-[481px]:mb-10 max-[480px]:mt-16 max-[480px]:mb-4">
             <h2 className="text-5xl pt-10"><b>TOP SECRET</b></h2>
             <h3 className="text-xl">Cyber Pyre</h3>
             <a className="text-green-500 hover:text-green-600 hover:underline" href="/documents/Resume.pdf"><small>Print Document</small></a>
           </div>
           <h1 className="text-center text-3xl mb-5">Tristen Young</h1>
-          <div className="flex ml-8 space-x-32 fill-current mb-4">
+          <div className="min-[481px]:flex min-[481px]:ml-8 min-[481px]:space-x-32 fill-current mb-4 max-[480px]:text-center">
             <Image src="/images/trynn.jpg" alt="Photo of Trynn at dB Engineering" layout="fixed" width="200px" height="250px" />
             <p>Aliases: Trynn, Triscuit, Mr.T<br className="mb-2"/>
                 D.O.B: March 23, 1337<br className="mb-2"/>
@@ -52,9 +52,9 @@ const Resume: NextPage = () => {
                 Height: 175.26 cm<br className="mb-2"/>
                 Hair: Brown<br className="mb-2"/>
                 Eyes: Brown<br className="mb-2"/>
-                Nationality: American<br/>
+                Nationality: American<br className="max-[480px]:mb-10"/>
             </p>
-            <RadarChart height={300} width={450}
+            <RadarChart className="max-[480px]:right-10" height={300} width={450}
               outerRadius="80%" data={data}>
               <PolarGrid />
               <PolarAngleAxis dataKey="name" />
@@ -63,7 +63,7 @@ const Resume: NextPage = () => {
               fill="green" fillOpacity={0.5} />
             </RadarChart>
           </div>
-          <div className="grid grid-cols-2 gap-14">
+          <div className="min-[481px]:grid min-[481px]:grid-cols-2 min-[481px]:gap-14">
             <div className="half-left">
               <div className="mb-8">
                 <h4 className="text-xl"><u>Syndicate History&emsp;&emsp;&emsp;&emsp;</u></h4>
@@ -131,7 +131,7 @@ const Resume: NextPage = () => {
               <div className="skills">
                 <h4 className="text-xl"><u>Skills&emsp;&emsp;&emsp;&emsp;</u></h4>
                 <ul className="list-disc ml-10 mt-5">
-                  <li>Javascript/Typescript</li>
+                  <li>Javascript / Typescript</li>
                   <li>C/C++</li>
                   <li>Assembly</li>
                   <li>Visual Basic</li>
