@@ -54,7 +54,7 @@ const Resume: NextPage = () => {
                 Eyes: Brown<br className="mb-2"/>
                 Nationality: American<br/>
             </p>
-            <RadarChart height={300} width={400}
+            <RadarChart height={300} width={450}
               outerRadius="80%" data={data}>
               <PolarGrid />
               <PolarAngleAxis dataKey="name" />
