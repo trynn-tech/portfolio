@@ -46,7 +46,7 @@ const Home: NextPage = () => {
         <div className="noise"></div>
         <div className="overlay"></div>
         <div className="terminal px-12" id="terminal">
-          <p className="min-[481px]:mr-[50%] mt-12"> Hello, My name is Trynn Zala your friendly neighborhood console cowboy. My life is a sequence of strange events.
+          <p className="min-[481px]:mr-[50%] pt-12"> Hello, My name is Trynn Zala your friendly neighborhood console cowboy. My life is a sequence of strange events.
             So I have become a bit of an expert solving such strange events that happen through electricity,
             language, and society. Type &lsquo;help&rsquo; into the prompt below to see a list of currently
             available functions of this website
