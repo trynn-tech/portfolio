@@ -49,7 +49,7 @@ const Home: NextPage = () => {
           <p className="min-[481px]:mr-[50%] pt-12"> Hello, My name is Trynn Zala your friendly neighborhood console cowboy. My life is a sequence of strange events.
             So I have become a bit of an expert solving such strange events that happen through electricity,
             language, and society. Type &lsquo;help&rsquo; into the prompt below to see a list of currently
-            available functions of this website
+            available functions of this website. Please contact me at <a href="mailto:tristen@trynn.tech">Tristen@trynn.tech</a>
           </p>
           <nav className="menu flex flex-col">
             <Link href="/resume"><a className="mt-4 indent-2">Resume</a></Link>
