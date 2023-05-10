@@ -30,6 +30,7 @@ const Home: NextPage = () => {
           <ul>
             <li><a href="https://www.linkedin.com/in/trynn2501/">https://www.linkedin.com/in/trynn2501/</a></li>
             <li><a href="https://github.com/Trynn2501" className="whitespace-pre">https://github.com/Trynn2501</a></li>
+            <li><a href="mailto:tristen@trynn.tech">Email</a></li>
           </ul>
         )
       } 
