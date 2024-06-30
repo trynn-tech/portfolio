@@ -75,6 +75,19 @@ const Resume: NextPage = () => {
               <div className="mb-8">
                 <h4 className="text-xl"><u>Syndicate History&emsp;&emsp;&emsp;&emsp;</u></h4>
                 <div className="my-5">
+                  <p><b>Pero Seo Inc.</b> Remote<br/>
+                  <i>Software Engineer</i><br/>
+                  <small>November 2022  - Present</small>
+                  </p>
+                  <ul className="list-disc ml-10">
+                    <li>Participated in the development of a proprietary structured data tool.</li>
+                    <li>Addressed and resolved a canonical URL issue; reduced 2506 affected pages to 0 with custom coded canonical redirect for https://www.irs.com/en/.</li>
+                    <li>Performed the menu infrastructure rebuild using custom JS/CSS/HTML for the main menu, catering menu, and drinks menu pages on https://tgifridays.com/.</li>
+                    <li>Automated some internal spreadsheets analysis of keyword oppurtunities</li>
+                    <li>Address and triage curosory technical ailments that may reduce SEO positioning such as speed and security</li>
+                  </ul>
+                </div>
+                <div className="my-5">
                   <p><b>Fieldsend Marketing,</b> Remote<br/>
                   <i>Freelance Software Developer</i><br/>
                   <small>January 2019 - Present</small>
