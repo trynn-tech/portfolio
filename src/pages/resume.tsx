@@ -83,7 +83,7 @@ const Resume: NextPage = () => {
                     <li>Participated in the development of a proprietary structured data tool.</li>
                     <li>Addressed and resolved a canonical URL issue; reduced 2506 affected pages to 0 with custom coded canonical redirect for https://www.irs.com/en/.</li>
                     <li>Performed the menu infrastructure rebuild using custom JS/CSS/HTML for the main menu, catering menu, and drinks menu pages on https://tgifridays.com/.</li>
-                    <li>Automated some internal spreadsheets analysis of keyword oppurtunities</li>
+                    <li>Automated some internal spreadsheets analysis of keyword opportunities</li>
                     <li>Address and triage curosory technical ailments that may reduce SEO positioning such as speed and security</li>
                   </ul>
                 </div>
