@@ -148,12 +148,7 @@ const Resume: NextPage = () => {
                   <li>AJAX</li>
                   <li>REST-level-2</li>
                   <li>Docker</li>
-                  <li>GraphQL</li>
                   <li>Bash</li>
-                  <li>Visual Studio Code</li>
-                  <li>Emacs</li>
-                  <li>Vim</li>
-                  <li>Eclipse</li>
                   <li>Linux</li>
                 </ul>
               </div>
