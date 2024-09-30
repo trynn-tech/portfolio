@@ -80,6 +80,8 @@ const Resume: NextPage = () => {
                   <small>November 2022  - Present</small>
                   </p>
                   <ul className="list-disc ml-10">
+                    <li>Engineered a proprietary web-scraper capable of bypassing advanced bot protection measures, enhancing data collection capabilities.</li>
+                    <li>Prototyped an innovative WordPress theme builder utilizing Large Language Models (LLMs), streamlining the theme application and reducing vendor lock-in</li>
                     <li>Participated in the development of a proprietary structured data tool.</li>
                     <li>Addressed and resolved a canonical URL issue; reduced 2506 affected pages to 0 with custom coded canonical redirect for https://www.irs.com/en/.</li>
                     <li>Performed the menu infrastructure rebuild using custom JS/CSS/HTML for the main menu, catering menu, and drinks menu pages on https://tgifridays.com/.</li>
